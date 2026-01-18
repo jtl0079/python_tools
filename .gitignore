@@ -1,0 +1,77 @@
+# ─────────────────────────────
+# Python bytecode / cache
+# ─────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ─────────────────────────────
+# Virtual environments
+# ─────────────────────────────
+.venv/
+venv/
+env/
+
+# ─────────────────────────────
+# Packaging / build artifacts
+# ─────────────────────────────
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ─────────────────────────────
+# Editable install artifacts
+# ─────────────────────────────
+*.pth
+
+# ─────────────────────────────
+# Test / coverage
+# ─────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ─────────────────────────────
+# Type checking / lint
+# ─────────────────────────────
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.pylint.d/
+
+# ─────────────────────────────
+# Documentation
+# ─────────────────────────────
+docs/_build/
+site/
+
+# ─────────────────────────────
+# IDE / Editor
+# ─────────────────────────────
+.vscode/
+.idea/
+*.iml
+
+# ─────────────────────────────
+# OS
+# ─────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────
+# Logs / runtime artifacts
+# ─────────────────────────────
+*.log
+*.pid
+*.lock
+tmp/
+.cache/
+
+# ─────────────────────────────
+# Local config / secrets
+# ─────────────────────────────
+.env
+.env.*
+config.local.*
