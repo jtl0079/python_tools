@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+
 from python_tools.ai.vision.model.BoundingBox import BoundingBox
 
 
