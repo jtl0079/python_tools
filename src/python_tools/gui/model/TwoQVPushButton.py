@@ -1,8 +1,8 @@
+from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
     QPushButton,
     QVBoxLayout,
 )
-from PySide6.QtCore import Qt
 
 
 class TwoQVPushButton:
