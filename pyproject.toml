@@ -1,15 +1,63 @@
+# ====================================
+#            build-system
+# ====================================
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
+
+# ====================================
+#              project
+# ====================================
 [project]
 name = "python_tools"
 version = "0.1.0"
-description = "Skeleton-first Python tools library"
+description = "Alims Python tools library"
 requires-python = ">=3.10"
+
+dependencies = [
+    "requests>=2.31.0",
+    "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+all = [
+    "requests>=2.31.0",
+    "numpy>=1.26.0",
+    "PySide6"
+]
+
+dev = [
+    "requests>=2.31.0",
+    "numpy>=1.26.0",
+    "PySide6",
+    
+    # [develop]
+    "build",
+    "pytest>=8.0",
+    "ruff>=0.6.0",
+    "ipykernel",
+    "jupyter",
+    "ultralytics>=8.3",
+]
+
+# ====================================
+#                tool
+# ====================================
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
