@@ -24,14 +24,20 @@ dependencies = [
 all = [
     "requests>=2.31.0",
     "numpy>=1.26.0",
-    "PySide6"
+    "PySide6",
+
+    "fastapi",
+    "uvicorn",
 ]
 
 dev = [
     "requests>=2.31.0",
     "numpy>=1.26.0",
     "PySide6",
-    
+
+    "fastapi",
+    "uvicorn",
+
     # [develop]
     "build",
     "pytest>=8.0",
