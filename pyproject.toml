@@ -21,22 +21,16 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-all = [
-    "requests>=2.31.0",
-    "numpy>=1.26.0",
+gui = [
     "PySide6",
+]
 
+web = [
     "fastapi",
     "uvicorn",
 ]
 
 dev = [
-    "requests>=2.31.0",
-    "numpy>=1.26.0",
-    "PySide6",
-
-    "fastapi",
-    "uvicorn",
 
     # [develop]
     "build",
