@@ -21,6 +21,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+ai = [
+    "ultralytics>=8.3",
+]
+
 gui = [
     "PySide6",
 ]
@@ -38,7 +42,6 @@ dev = [
     "ruff>=0.6.0",
     "ipykernel",
     "jupyter",
-    "ultralytics>=8.3",
 ]
 
 # ====================================

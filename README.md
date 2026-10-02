@@ -14,7 +14,7 @@ A reusable Python library that can be integrated into your project using either:
 Install directly from the repository:
 
 ```bash
-pip install "python-tools @ git+https://github.com/jtl0079/python_tools.git@main"
+pip install "python-tools[ai,web,gui] @ git+https://github.com/jtl0079/python_tools.git@main"
 ```
 
 #### `pyproject.toml`
@@ -24,7 +24,7 @@ Add the package to your project's dependencies:
 ```toml
 [project]
 dependencies = [
-    "python-tools @ git+https://github.com/jtl0079/python_tools.git@main",
+    "python-tools[ai,web,gui] @ git+https://github.com/jtl0079/python_tools.git@main",
 ]
 ```
 
