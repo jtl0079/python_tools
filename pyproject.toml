@@ -34,10 +34,15 @@ web = [
     "uvicorn",
 ]
 
-dev = [
+gui-kivy = [
+    "kivy",
+]
 
+dev = [
     # [develop]
+
     "build",
+    "buildozer",
     "pytest>=8.0",
     "ruff>=0.6.0",
     "ipykernel",
